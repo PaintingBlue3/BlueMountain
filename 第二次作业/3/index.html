@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业3</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main {
+            margin: auto;
+            width: 500px;
+            height: 630px;
+            border: 40px solid rgb(191, 229, 229);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .header {
+            width: 500px;
+            height: 320px;
+            background-color: rgb(240, 239, 235);
+        }
+
+        .header_list {
+            width: 500px;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .option {
+            margin: auto;
+            margin-right: 7px;
+            color: rgb(59, 70, 79);
+            font-size: 5px;
+        }
+
+        #chosen {
+            color: rgb(44, 171, 177);
+        }
+
+        .underline {
+            position: relative;
+            float: left;
+            left: 160px;
+            top: 50px;
+            height: 2px;
+            width: 36px;
+            background-color: rgb(44, 171, 177);
+        }
+        #list img {
+            margin: auto;
+            margin-left: 7px;
+            margin-right: 7px;
+            width: 20px;
+            height: 20px;
+        }
+
+        #cover {
+            width: 500px;
+        }
+
+        #logo {
+            margin: 20px;
+            margin-right: 10px;
+            width: 120px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+        }
+        .cot_box {
+            display: flex;
+            flex-direction: column;
+        }
+        .cot_box h3{
+           text-align: center;
+        }
+        .cot_box p{
+            margin: 15px;
+            margin-top: 10px;
+        }
+        .cot_box img{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="underline"></div>
+        <div class="header">
+            <div class="header_list">
+                <img id="logo" src="logo.png">
+                <span id="list">
+                    <span class="option" id="chosen">HOME</span>
+                    <span class="option">ABOUT US</span>
+                    <span class="option">SERVICE</span>
+                    <span class="option">REFERENCE</span>
+                    <span class="option">CONTACT</span>
+                    <img src="search.png">
+                </span>
+            </div>
+            <img id="cover" src="1.png">
+        </div>
+        <div class="content">
+            <div class="cot_box">
+                <img src="钥匙.png">
+                <h3>标题1</h3>
+                <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
+            </div>
+            <div class="cot_box">
+                <img src="循环.png">
+                <h3>标题2</h3>
+                <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
+
+            </div>
+            <div class="cot_box">
+                <img src="直尺.png">
+                <h3>标题3</h3>
+                <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

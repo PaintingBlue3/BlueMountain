@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .main {
+            width: 1060px;
+            height: 1045;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            display: grid;
+            margin: 20px;
+            grid-template-columns: 250px 250px 250px 250px;
+            grid-template-rows: 250px 250px 250px 250px;
+            grid-gap: 20px;
+        }
+
+        .grid-item {
+            background-color: rgb(42, 42, 42);
+        }
+
+        .grid-item.one {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .grid-item.two {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .grid-item.three {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .grid-item.four {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .grid-item.five {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .grid-item.six {
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .grid-item.seven {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .grid-item.eight {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .grid-item.eight {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .grid-item.nine {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .grid-item.ten {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .pic_1_1 {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .grid-item h3 {
+            margin: 15px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            color: rgb(217, 217, 217);
+        }
+
+        .grid-item p {
+            margin: 15px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            line-height: 25px;
+            color: gray;
+        }
+
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .color {
+            color: rgb(197, 144, 162);
+        }
+
+        .color1 {
+            color: rgb(196, 166, 118);
+        }
+
+        .color2 {
+            color: rgb(238, 213, 242);
+        }
+
+        .color3 {
+            color: rgb(47, 219, 239);
+        }
+
+        .color4 {
+            color: rgb(157, 83, 74)
+        }
+
+        #word {
+            margin: 30px;
+            width: auto;
+            font-size: 55px;
+            line-height: 90px;
+        }
+
+        #word1 {
+            margin: 30px;
+            margin-bottom: 150px;
+            width: auto;
+            font-size: 45px;
+            line-height: 60px;
+        }
+
+        #word2 {
+            width: auto;
+            font-size: 25px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="grid-item one">
+                <img class="pic_1_1" src="../1/pic.png">
+            </div>
+            <div class="grid-item two">
+                <div class="wordbox">
+                    <h3>一个标题</h3>
+                    <p>一些正文一些正文一些正文
+                        <br>一些正文一些正文
+                        <br>一些正文一些正文一些正文...
+                        <br>一些正文一些正文一些正文...
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item three">
+                <p id="word">靠靠靠<span class="color">靠靠靠</span>靠靠靠靠靠靠靠靠靠靠靠<span class="color">靠靠</span>靠</p>
+            </div>
+            <div class="grid-item four">
+                <img class="pic_1_1" src="pic.JPG">
+            </div>
+            <div class="grid-item five">
+                <div class="wordbox">
+                    <h3>一个标题</h3>
+                    <p>一些正文一些正文一些正文
+                        <br>一些正文一些正文
+                        <br>一些正文一些正文一些正文...
+                        <br>一些正文一些正文一些正文...
+                    </p>
+                </div>
+            </div>
+            <div class="grid-item six">
+                <p id="word1">
+                    <span class="color1">5</span> Designer, <span class="color1">2</span>
+                    <br>Developers,and <span class="color1">1</span>
+                    <br>person counting the
+                    <br>pennies.
+                </p>
+            </div>
+            <div class="grid-item seven">
+                <p id="word2">
+                    Designer,
+                    <br>Developers,and
+                    <br><span class="color2">person</span> counting
+                </p>
+            </div>
+            <div class="grid-item eight">
+                <p id="word2">
+                    Designer,
+                    <br>Developers,<span class="color3">and</span>
+                    <br>person counting
+                </p>
+            </div>
+            <div class="grid-item nine">
+                <p id="word2">
+                    Designer,
+                    <br><span class="color4">Developers</span>,hello
+                    <br>person counting
+                </p>
+            </div>
+            <div class="grid-item ten">
+                <img class="pic_1_1" src="pic1.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
