@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            width: 400px;
+            height: 500px;
+            background-color: pink;
+        }
+
+        .h3 {
+            padding-top: 30px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .memo {
+            padding-bottom: 20px;
+        }
+
+        #text {
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px;
+            margin-left: 40px;
+            padding-left: 10px;
+            width: 250px;
+            height: 30px;
+            border: none;
+            outline: none;
+        }
+
+        #add {
+            outline: none;
+            border: none;
+            font-size: 13px;
+            background-color: palevioletred;
+            height: 30px;
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 9px;
+            width: 60px;
+        }
+
+        .memos {
+            background-color: white;
+            padding: 7px;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+
+        .dlt {
+            position: relative;
+            float: right;
+            font-size: 15px;
+            right: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .check {
+            float: left;
+            width: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h3 class="h3">My To Do List</h3>
+        <div class="memo">
+            <input id="text" type="text" name="things" placeholder="记录一下"><button id="add">Add</button>
+        </div>
+        <div class="todoList">
+            <div class="memos">好吧<span class="dlt">x</span></div>
+            <div class="memos">好吧<span class="dlt">x</span></div>
+        </div>
+    </div>
+    <script src="./index.js" type="module"></script>//不知道为什么引用老是跨域。。liveserver可以跑
+</body>
+
+</html>
