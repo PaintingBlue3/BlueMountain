@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise.all</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let p1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('OK');
+        }, 1000);
+    })
+    let p2 = Promise.resolve('Success');
+    let p3 = Promise.resolve('Oh Yeah');
+    //调用
+    const result = Promise.all([p1, p2, p3]);
+
+    console.log(promiseAll([p1, p2, p3]))
+
+    function promiseAll(promises) {
+        return new Promise(function (resolve, reject) {
+            var resolvedCounter = 0;
+            var promiseNum = promises.length;
+            var resolvedValues = new Array(promiseNum);
+            for (var i = 0; i < promiseNum; i++) {
+                (function (i) {
+                    Promise.resolve(promises[i]).then(function (value) {
+                        resolvedCounter++
+                        resolvedValues[i] = value
+                        if (resolvedCounter == promiseNum) {
+                            return resolve(resolvedValues)
+                        }
+                    }, function (reason) {
+                        return reject(reason)
+                    })
+                })(i)
+            }
+        })
+    }
+
+    // setTimeout(function () {
+    //     console.log(result)
+    //     /*
+    //     Promise {<fulfilled>: Array(3)}
+    //     [[Prototype]]: Promise
+    //     [[PromiseState]]: "fulfilled"
+    //     [[PromiseResult]]: Array(3)
+    //     0: "OK"
+    //     1: "Success"
+    //     2: "Oh Yeah"
+    //     length: 3
+    //     [[Prototype]]: Array(0)
+    //     */
+    // }, 2000)
+</script>
+
+</html>
